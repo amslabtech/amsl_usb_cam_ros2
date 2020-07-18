@@ -1,4 +1,6 @@
 # amsl_usb_cam_ros2
+[![test](https://github.com/amslabtech/amsl_usb_cam_ros2/workflows/test/badge.svg)](https://github.com/amslabtech/amsl_usb_cam_ros2/actions)
+
 ROS2 webcam driver
 
 # Requirement
