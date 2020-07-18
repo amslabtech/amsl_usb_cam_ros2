@@ -8,8 +8,8 @@ ROS2 webcam driver
 # Install and build
 ```
 cd your_ros2_ws/src
-git clone https://github.com/amslabtech/obstacle_point_cloud_detector.git
-vcs install < obstacle_point_cloud_detector/.rosinstall 
+git clone https://github.com/amslabtech/amsl_usb_cam_ros2.git
+vcs install < amsl_usb_cam_ros2/.rosinstall 
 cd your_ros2_ws
 rosdep install -i -r -y --from-paths src
 colcon build 
