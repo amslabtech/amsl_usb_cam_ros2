@@ -29,7 +29,7 @@ jobs:
           mkdir -p ~/ros2_ws/src/$package_name
           cp -r . ~/ros2_ws/src/$package_name
           cd ~/ros2_ws
-          vcs import src < src/$package_name/.rosinstall
+          # vcs import src < src/$package_name/.rosinstall
           rosdep install -i -r -y --from-paths src
           colcon build
           source ~/ros2_ws/install/setup.bash
