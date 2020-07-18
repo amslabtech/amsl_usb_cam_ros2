@@ -64,7 +64,8 @@ void CamImagePublisherComponent::timer_callback(void)
 {
   cv::Mat image;
   if (!cap.read(image)) {
-    RCLCPP_ERROR(get_logger(), "Failed to read image from " + camera_device_name_);
+    RCLCPP_ERROR_THROTTLE(
+      get_logger(), clock_, 1000, "Failed to read image from " + camera_device_name_);
     return;
   }
   cv::resize(
